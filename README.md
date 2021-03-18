@@ -8,7 +8,7 @@ No contexto de vendas e marketing online, muitas vezes os usuários são direcio
 
 ## Dataset
 
-É disponibilizado um database SQLite "*bi_challenge.db*" que contém 2 tabelas com as seguintes colunas:
+É disponibilizado um database SQLite "*amigoedu_bi_challenge.sqlite*" que contém 2 tabelas com as seguintes colunas:
 
 **table_A**: lista de conversões
 * *convId* - ID da transação
@@ -20,9 +20,9 @@ No contexto de vendas e marketing online, muitas vezes os usuários são direcio
 **table_B**: atribuições de canais para as conversões
 * *convId* - id da transação
 * *channel* - canal de marketing
-* *ihcFrac* - contribuição do canal para a conversão
+* *contribution* - contribuição do canal para a conversão
 
-Note que a fração de contribuição do canal (*ihcConv*) é a porção de uma dada conversão que é atribuída a um canal pelo modelo IHC, e soma 1.0 para cada conversão.
+Note que a fração de contribuição do canal (*contribution*) representa o quanto um canal de marketing foi responsável por uma venda, e naturalmente soma 1.0 para cada conversão.
 
 ## Tarefa
 
@@ -30,7 +30,7 @@ O objetivo é bem direto: queremos que você analise os dados e mostre o que é 
 
 Obviamente não esperamos que sejam criadas soluções ou relatórios extensos. A intenção é avaliar como o problema é abordado e ter uma idéia das suas habilidades técnicas e analíticas. 
 
-Sinta-se a vontade para utilizar quaisquer linguagens e/ou tecnologias de sua preferência para esse desafio.
+Sinta-se a vontade para utilizar quaisquer linguagens e/ou tecnologias de sua preferência para esse desafio, mas a utilização de Python e o pacote Pandas para carregar e tratar os dados devem facilitar bastante a tarefa.
 
 ### Algumas dicas de coisas interessantes para analisar:
 * Visão geral de KPIs ao longo do tempo (por exemplo: receita, número de clientes, proporção de clientes que retornam)
